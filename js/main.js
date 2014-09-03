@@ -33,3 +33,8 @@ var Menu = {
 Menu.init();
 // end of hamburger js code
 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
