@@ -15,16 +15,22 @@
 
 
 <!-- hamburger menu code -->
-<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:200,300' rel='stylesheet' type='text/css'>
-
-<div class="menu">
-  <span class="menu-global menu-top"style="margin-left:1500%;"> 
-  </span>
-  <span class="menu-global menu-middle"style="margin-left:1500%;">
-  </span>
-  <span class="menu-global menu-bottom"style="margin-left:1500%;">
-  </span>
-</div>
+ <button id="hamb">
+      <div id="rect1" class="showRect"></div> 
+      <div id="rect2" class="showRect"></div> 
+      <div id="rect3" class="showRect"></div> 
+  </button>
+  <div id="slideDown" class="hidden">
+    <ul>
+      <li> Link </li>
+      <li> Link </li>
+      <li> Link </li>
+    </ul>
+  </div>
+</nav>
+<div id="wrapper">
+  <div id="navSpace"></div>
+  <div class="content">
 <!-- end of hamburger menu code -->
 
 <body>
@@ -37,42 +43,19 @@
 
 
 
-<head>
-<script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-  });
-});
-</script>
- 
-<style> 
-#panel,#flip
-{
-padding:5px;
-text-align:center;
-background-color:#e5eecc;
-border:solid 1px #c3c3c3;
-}
-#panel
-{
-padding:50px;
-display:none;
-}
+<head> 
 
-}
-</style>
 </head>
-<div id="flip" style="border: 5px solid black; margin: 0 auto; width: 1000px">Click to slide the panel down or up  </div>
-<div id="panel" style="border: 5px solid black; margin: 0 auto; width: 1000px"> My name is Andrew Olivas. I am sophomore at Pasadena High School. I've been in the App Academy for one year and learned a lot about computer science. I enjoy playing video games, watching all the marvel movies except for the Thor movies (they suck), my favorite shows are Game of Thrones and Arrow, favorite movies are Iron Man, Guardians of the Galaxy, and Star Wars, and my favorite games are Dark Souls and Dishonored. </div>
+<div id="flip" style="border: 5px solid black; margin: 0 auto; width: 1000px">Click to view my bio, then click to hide </div>
+<div id="panel" style="border: 5px solid black; margin: 0 auto; width: 1000px"> My name is Andrew Olivas. I am sophomore at Pasadena High School. I've been in the App Academy for one year and learned a lot about computer science. I enjoy playing video games, watching all the marvel movies except for the Thor movies (they suck), my favorite shows are Game of Thrones and Arrow, favorite movies are Iron Man, Guardians of the Galaxy, and Star Wars and my favorite games are Dark Souls and Dishonored. </div>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  
+ 
 
+ <br>
+ <br>
 
-
-</body>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" href="js/bootstrap.min.js"></script>

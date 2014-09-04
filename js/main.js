@@ -1,40 +1,63 @@
 // hamburger menu js code
-var Menu = {
-  
-  el: {
-    ham: $('.menu'),
-    menuTop: $('.menu-top'),
-    menuMiddle: $('.menu-middle'),
-    menuBottom: $('.menu-bottom')
-  },
-  
-  init: function() {
-    Menu.bindUIactions();
-  },
-  
-  bindUIactions: function() {
-    Menu.el.ham
-        .on(
-          'click',
-        function(event) {
-        Menu.activateMenu(event);
-        event.preventDefault();
-      }
-    );
-  },
-  
-  activateMenu: function() {
-    Menu.el.menuTop.toggleClass('menu-top-click');
-    Menu.el.menuMiddle.toggleClass('menu-middle-click');
-    Menu.el.menuBottom.toggleClass('menu-bottom-click'); 
-  }
-};
 
-Menu.init();
-// end of hamburger js code
+
+
+var hamburger="hamb"; 
+var slideNavName="slideDown";
+
+var rectangleName="rect"; 
+var showRect= "showRect";
+var topRectX= "topRectX";
+var hideRectX= "hideRectX";
+var bottomRectX= "bottomRectX";
+
+
+$("#"+hamburger).click(function(event) 
+{
+  if($("#"+slideNavName).attr('class')=="hidden") 
+  {
+    
+    $("#"+rectangleName+"1").toggleClass(showRect+" "+topRectX);
+    $("#"+rectangleName+"2").toggleClass(showRect+" "+hideRectX);
+    $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
+    
+    
+    $("#"+slideNavName).toggleClass('hidden revealed');
+  }
+  
+  else if($("#"+slideNavName).attr('class')=="revealed") 
+  {
+    
+    $("#"+rectangleName+"1").toggleClass(showRect+" "+topRectX);
+    $("#"+rectangleName+"2").toggleClass(showRect+" "+hideRectX);
+    $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
+    
+    
+    $("#"+slideNavName).toggleClass('revealed hidden');
+  }
+});
+
+
+
+
+$(window).scroll(function(event) 
+{
+  if($("#"+slideNavName).attr('class')=="revealed") 
+  {
+   
+    $("#"+rectangleName+"1").toggleClass(showRect+" "+topRectX);
+    $("#"+rectangleName+"2").toggleClass(showRect+" "+hideRectX);
+    $("#"+rectangleName+"3").toggleClass(showRect+" "+bottomRectX);
+    
+  
+    $("#"+slideNavName).toggleClass('revealed hidden');
+  }
+});
+// panel java
 
 $(document).ready(function(){
   $("#flip").click(function(){
     $("#panel").slideToggle("slow");
   });
 });
+
