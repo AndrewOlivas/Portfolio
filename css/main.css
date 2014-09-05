@@ -221,8 +221,6 @@ background-color: #fff;
 }
 
 /*carousel css*/
-
-
 .carousel {
   display: block;
   position: relative;
@@ -238,7 +236,7 @@ background-color: #fff;
   -webkit-box-shadow: 0 4px 10px #000;
   box-shadow: 0 4px 10px #000;
   
-  height: 220px;
+  height: 300px;
   -webkit-overflow-scrolling: touch;
   
 }
@@ -331,7 +329,7 @@ background-color: #fff;
 .carousel > .wrap > ul {
   list-style: none;
   white-space: nowrap;
-  height: 200px;
+  height: 280px;
 }
 .carousel > .wrap > ul > li {
   display: inline-block;
