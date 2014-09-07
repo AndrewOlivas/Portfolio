@@ -59,10 +59,7 @@ $(document).ready(function(){
 });
 
 // js carousel
-// Hover-Carousel jQuery plugin
-// By Yair Even-Or
-// https://github.com/yairEO/hover-carousel
-// http://dropthebit.com
+
 
 ;(function($){
     "use strict";
