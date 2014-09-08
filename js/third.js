@@ -50,3 +50,11 @@ $(window).scroll(function(event)
     $("#"+slideNavName).toggleClass('revealed hidden');
   }
 });
+// panel bro trust
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+// end of trusting
+
